@@ -18,7 +18,7 @@ public abstract class Piece {
 	// abstrato pq eu nao sei o movimento de uma peça generica só sei das peças especificas
 	public abstract boolean[][] possibleMoves();
 	
-	public boolean possibleMove(Position positon) {
+	public boolean possibleMove(Position position) {
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
 	
